@@ -4,7 +4,7 @@ return [
     'database' => [
         'host' => 'mysql',
         'port' => 3306,
-        'dbname' => 'meu_banco',
+        'dbname' => 'note_app',
         'charset' => 'utf8mb4'
     ]
 ];

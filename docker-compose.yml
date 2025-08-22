@@ -1,7 +1,7 @@
 services:
   php:
     build: . 
-    container_name: meu_php
+    container_name: mini_project_notes
     volumes:
       - ./src:/var/www/html
     ports:
@@ -11,10 +11,10 @@ services:
 
   mysql:
     image: mysql:8.0
-    container_name: meu_mysql
+    container_name: notes_mysql
     environment:
       MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: meu_banco
+      MYSQL_DATABASE: note_app
       MYSQL_USER: usuario
       MYSQL_PASSWORD: senha123
     volumes:
